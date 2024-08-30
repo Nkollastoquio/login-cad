@@ -1,32 +1,46 @@
-## Projeto de Cadastro e Login
-Este projeto é uma aplicação simples para gerenciamento de usuários com funcionalidades de login, cadastro e edição de registros. É composto por duas telas principais: uma tela de login e uma tela de cadastro.
+## Sistema de Cadastro de Usuários
+Este projeto é uma aplicação web simples para cadastro e gestão de usuários. A página permite adicionar usuários com nome, e-mail e CPF, bem como visualizar a lista de usuários em uma tabela.
+
+## Funcionalidades
+Cadastro de Usuários: Permite adicionar usuários com nome, e-mail e CPF.
+Validação de Campos: Verifica se os campos são preenchidos e se o CPF e e-mail estão em formato válido.
+Exibição de Lista: Mostra a lista de usuários em uma tabela com a opção de editar e excluir entradas (dependente do JavaScript implementado).
+
+## Tecnologias Utilizadas
+* HTML: Estrutura da página.
+* CSS: Estilização dos componentes (utilizando Bootstrap e um arquivo CSS personalizado).
+* JavaScript: Lógica para validar e manipular dados dos usuários.
+
+## Sistema de Cadastro de Usuários
+
+Este projeto é uma aplicação web simples para cadastro de usuários, com validação de CPF e e-mail. Ele permite adicionar, editar e excluir usuários, e exibe uma lista de usuários cadastrados.
 
 Funcionalidades
+* Validação de CPF: Verifica se o CPF informado é válido.
+* Validação de E-mail: Verifica se o e-mail informado tem um formato válido.
+* Cadastro de Usuários: Permite adicionar usuários com nome, e-mail e CPF.
+* Edição de Usuários: Permite editar informações de usuários existentes.
+* Exclusão de Usuários: Permite remover usuários da lista.
+* Tecnologias Utilizadas
+* HTML: Estrutura da página.
+* CSS: Estilização dos componentes (não incluído neste exemplo).
+* JavaScript: Lógica de validação e manipulação dos dados.
+
+1. Funcionalidades da Página
 Tela de Login
-
-## Campos: Email e Senha
-Validação: Verifica se ambos os campos estão preenchidos. Se algum campo estiver vazio, exibe um alerta solicitando o preenchimento dos campos.
-Redirecionamento: Se ambos os campos estiverem preenchidos, o usuário é redirecionado para a tela de cadastro (cadastro.html).
+Campos: E-mail e Senha.
+Botão: Acessar (redireciona para a página de cadastro se ambos os campos estiverem preenchidos).
 Tela de Cadastro
-
-## Campos: Nome do Usuário
-Ações Disponíveis:
-Salvar Usuário: Adiciona o nome do usuário ao array dadosLista e atualiza a tabela de usuários.
-Editar Usuário: Permite editar o nome de um usuário selecionado. O nome é removido da lista e colocado no campo de entrada para edição.
-Excluir Usuário: Remove o nome do usuário da lista e da tabela.
-
-## Uso
-Acesse o index.html para iniciar o login.
-Preencha os campos de email e senha e clique no botão de acesso.
-Na tela de cadastro, insira o nome do usuário e clique em "Salvar Usuário" para adicionar o nome à lista.
-Edite ou exclua nomes da lista usando os botões apropriados.
-
-## Observações
-Certifique-se de que os IDs dos elementos HTML correspondam aos usados no JavaScript.
-A tabela de usuários é atualizada dinamicamente toda vez que um nome é adicionado, editado ou excluído.
-
-
-## Fontes consultadas
+Campos: Nome, E-mail e CPF.
+Botão: Salvar (adiciona um usuário à lista se os campos forem válidos).
+Tabela: Exibe a lista de usuários com botões para Editar e Excluir.
+2. Funções JavaScript
+* validarCPF(cpf): Valida o CPF informado.
+* acessar(): Verifica o preenchimento dos campos de login e redireciona.
+* salvarUser(): Salva os dados do usuário na lista e atualiza a tabela.
+*  criarLista(): Atualiza a exibição da lista de usuários.
+* editar(index): Permite editar os dados de um usuário.
+* excluir(index): Remove um usuário da lista.
 
 https://developer.mozilla.org/en-US/docs/Web/API/HTMLTableElement/deleteRow 
 
