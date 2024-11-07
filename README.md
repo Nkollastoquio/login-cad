@@ -41,7 +41,3 @@ Tabela: Exibe a lista de usuários com botões para Editar e Excluir.
 *  criarLista(): Atualiza a exibição da lista de usuários.
 * editar(index): Permite editar os dados de um usuário.
 * excluir(index): Remove um usuário da lista.
-
-https://developer.mozilla.org/en-US/docs/Web/API/HTMLTableElement/deleteRow 
-
-https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/Array/splice
